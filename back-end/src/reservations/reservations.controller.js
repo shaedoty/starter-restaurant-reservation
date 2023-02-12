@@ -1,3 +1,4 @@
+
 /**
  * List handler for reservation resources
  */
@@ -9,4 +10,4 @@ async function list(req, res) {
 
 module.exports = {
   list,
-};
+}
