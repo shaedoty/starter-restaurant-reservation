@@ -1,12 +1,7 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 
-/**
- * Defines the menu for this application.
- *
- * @returns {JSX.Element}
- */
+// Defines the menu for this application.
 
 function Menu() {
   return (
@@ -28,14 +23,15 @@ function Menu() {
               &nbsp;Dashboard
             </Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/search">
+          <li 
+          className="nav-item">
+            <Link className="nav-link" to="/search" >
               <span className="oi oi-magnifying-glass" />
               &nbsp;Search
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/reservations/new">
+            <Link  className="nav-link" to="/reservations/new">
               <span className="oi oi-plus" />
               &nbsp;New Reservation
             </Link>
@@ -48,11 +44,7 @@ function Menu() {
           </li>
         </ul>
         <div className="text-center d-none d-md-inline">
-          <button
-            className="btn rounded-circle border-0"
-            id="sidebarToggle"
-            type="button"
-          />
+         
         </div>
       </div>
     </nav>
