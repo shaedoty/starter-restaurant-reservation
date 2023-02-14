@@ -25,6 +25,11 @@ h6,
   
 }
 
+.btn{
+  color: #f6f6ef;
+  background-color:#2F4858
+}
+
 .oi{
   color: #A33B20
 }
@@ -36,9 +41,6 @@ h6,
 }
 
 
-.btn{
-  background-color:#2F4858
-}
 main,
 .side-bar {
   padding-top: 20px;
@@ -49,13 +51,26 @@ main,
   position: fixed;
 }
 
-/* For small screens */
-@media only screen and (max-width: 865px) {
+/* Use for smaller screens */
+
+ 
+@media only screen and (max-width: 850px) {
   .navbar {
-    bottom: 0;
+    position: absolute;
+    display:flex;
+    bottom:10%;
+
   }
+
+
   span.navText {
-    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+  .col-md-2 {
+  padding-top:40px;
   }
 
   .navbar-nav {
@@ -66,7 +81,48 @@ main,
     align-content: center;
   }
   main {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FIRST ATTEMPT
+
+/* 
+@media only screen and (max-width: 750px) {
+  .navbar {
+    bottom: 83%;
+  }
+  span.navText {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    display: flex;
+
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  main {
     padding-top: 20px;
     padding-bottom: 50px;
   }
-}
+} */
