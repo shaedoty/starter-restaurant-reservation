@@ -20,9 +20,7 @@ async function tableExists(req, res, next) {
 
 async function resExists(req, res, next) {
   const reservationId = req.body.data.reservation_id;
-  const existingReservation = await resService.readRes(
-    reservationId
-  );
+  const existingReservation = await resService.readRes(reservationId);
   if (existingReservation) {
     res.locals.reservation = existingReservation;
     return next();
@@ -70,7 +68,6 @@ function availableTable(req, res, next) {
   }
 }
 
-
 function validCapacity(req, res, next) {
   const { capacity } = req.body.data;
   if (typeof capacity === "number" && capacity > 0) {
@@ -83,7 +80,6 @@ function validCapacity(req, res, next) {
   }
 }
 
-
 function validName(req, res, next) {
   const { table_name } = req.body.data;
   if (table_name.length > 1) {
@@ -95,10 +91,6 @@ function validName(req, res, next) {
     });
   }
 }
-
-
-
-
 
 function bodyHasData(propertyName) {
   return function (req, res, next) {
@@ -113,11 +105,6 @@ function bodyHasData(propertyName) {
   };
 }
 
-
-
-
-
-
 function hasCapacity(req, res, next) {
   const table = res.locals.table;
   const reservation = res.locals.reservation;
@@ -131,12 +118,7 @@ function hasCapacity(req, res, next) {
   }
 }
 
-
-
-
-
 // Request handlers
-
 
 async function readTable(req, res) {
   const tableId = req.params.table_id;
@@ -168,8 +150,6 @@ async function createTable(req, res) {
   res.status(201).json({ data: responseData });
 }
 
-
-
 // Exports //
 
 module.exports = {
@@ -197,6 +177,4 @@ module.exports = {
     validCapacity,
     asyncErrorBoundary(createTable),
   ],
-
-
 };
