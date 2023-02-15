@@ -1,8 +1,4 @@
-/**
- * Defines the router for reservation resources.
- *
- * @type {Router}
- */
+
 
 const controller = require("./reservations.controller");
 const router = require("express").Router();
