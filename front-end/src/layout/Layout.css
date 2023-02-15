@@ -51,7 +51,7 @@ main,
   position: fixed;
 }
 
-/* Use for smaller screens */
+/* media only for smaller screens*/
 
  
 @media only screen and (max-width: 850px) {
