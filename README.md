@@ -2,11 +2,13 @@
 
 Periodic Tables is a restaurant reservation booking and table management system. Users of this application can view, create, edit, and delete reservations. Users can also search for reservations via mobile-number. Users can create new tables and seat reservations at a specific table. When seating the reservation at a table, validation will occur to ensure that the table size is of capable capacity for the reservation.
 
+
 ## Live Application
 
 [Frontend](https://restaurant-reservation-frontend-jt8p.onrender.com)-Deploys to Render
 
 [Backend](https://restaurant-reservation-backend-cc4q.onrender.com/reservations)-Deploys to Render. Use ``` /reservations ``` or ```/tables``` routes.
+
 
 ## Technology Used
 
@@ -28,4 +30,14 @@ Periodic Tables is a restaurant reservation booking and table management system.
 `PUT`|`/tables/:table_id/seat`| Updates a table with a reservation Id and changes status to "seated".
 `DELETE`|`/tables/:table_id/seat`| Updates a table by deleting reservation Id and changes status to "finished".
 
+
+## Installation
+
+1. Fork and clone this repository.
+2. Run cp ./back-end/.env.sample ./back-end/.env.
+3. Update the ./back-end/.env file with the connection  URL's to your ElephantSQL database instance.
+4. Run cp ./front-end/.env.sample ./front-end/.env.
+5. You should not need to make changes to the ./front-end/.env file unless you want to connect to a backend at a location other than http://localhost:5001.
+6. Run npm install to install project dependencies.
+7. Run npm run start:dev to start your server in development mode.
 
