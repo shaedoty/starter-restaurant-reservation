@@ -4,13 +4,13 @@ Periodic Tables is a restaurant reservation booking and table management system.
 
 ## Live Application
 
-[Frontend-Deploys to Render](https://restaurant-reservation-frontend-jt8p.onrender.com)
+[Frontend](https://restaurant-reservation-frontend-jt8p.onrender.com)-Deploys to Render
 
-[Backend-Deploys to Render. Use ``` /reservations ``` or ```/tables``` routes.](https://restaurant-reservation-backend-cc4q.onrender.com/reservations)
+[Backend](https://restaurant-reservation-backend-cc4q.onrender.com/reservations)-Deploys to Render. Use ``` /reservations ``` or ```/tables``` routes.
 
 ## Technology Used
 
-**Frontend:** Javascript, React, React Router, React Hooks, Bootstra, HTML, CSS
+**Frontend:** Javascript, React, React Router, React Hooks, Bootstrap, HTML, CSS
 
 **Backend:** Node.js, Express, PostgreSQL, Knex
 
