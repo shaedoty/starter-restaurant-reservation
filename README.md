@@ -17,11 +17,11 @@ Periodic Tables is a restaurant reservation booking and table management system.
 
 | Method | Route     | Description                |
 | :-------- | :------- | :------------------------- |
-| `GET` | `/reservations` | Lists all reservations for the current date. |
-`POST`| `	/reservations` | 	Creates and returns a new reservation.
-  `GET` |  `/reservations?date=YYYY-MM-DD` | 	Lists all reservations on the query date.
-`GET`| `	/reservations/:reservation_id` | Reads a specific reservation by reservation_id.
-`PUT` | `	/reservations/:reservation_id` | Updates and returns the reservation matching the reservation_id.
+| `GET`|`/reservations`|Lists all reservations for the current date. |
+`POST`|`/reservations`|Creates and returns a new reservation.
+`GET`|`/reservations?date=YYYY-MM-DD`|Lists all reservations on the query date.
+`GET`|`/reservations/:reservation_id` | Reads a specific reservation by reservation_id.
+`PUT` | `/reservations/:reservation_id` | Updates and returns the reservation matching the reservation_id.
 `PUT`| `/reservations/:reservation_id/status`| 	Updates only the status of a reservation.
 `GET`| `/tables`|Lists all tables.
 `POST`|`/tables`| Creates and returns a new table
