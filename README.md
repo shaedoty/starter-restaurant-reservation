@@ -41,3 +41,27 @@ Periodic Tables is a restaurant reservation booking and table management system.
 6. Run npm install to install project dependencies.
 7. Run npm run start:dev to start your server in development mode.
 
+
+## Features
+### Dashboard
+Here you can see the tables avaliable as well as the reservations for the chosen date. The user can navigate through different dates at the top, choose to edit, choose seats, or cancel current reservations, or navigate to a different page with the sidebar links.
+
+![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/Dashboard%20with%20Reservations.png)
+
+### New Reservation
+Users can create a new reservation by clicking on the `+ New Reservation` link on the sidebar. Each reservation requires a first name, last name, mobile number, party size, reservation time, and reservation date. If any inputs are invalid, the user will get an informative error message.
+
+![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/New%20Reservation.png)
+
+### Edit Reservation
+The Edit Reservation page allows a user to edit an existing reservation. When a user navigates to this page, the fields will be populated with the existing reservation's current information, which the user can edit. All constraints from the New Reservation page are present on this page. If any inputs are invalid, the user will get an informative error message.
+
+![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/Edit%20Reservation.png)
+
+![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/New%20Table.png)
+
+![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/Search.png)
+
+
+![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/Seat%20Reservation.png)
+
