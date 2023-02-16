@@ -25,7 +25,7 @@ Periodic Tables is a restaurant reservation booking and table management system.
 `PUT`| `/reservations/:reservation_id/status`| 	Updates only the status of a reservation.
 `GET`| `/tables`|Lists all tables.
 `POST`|`/tables`| Creates and returns a new table
-`PUT`|`	/tables/:table_id/seat`| Updates a table with a reservation Id and changes status to "seated".
+`PUT`|`/tables/:table_id/seat`| Updates a table with a reservation Id and changes status to "seated".
 `DELETE`|`/tables/:table_id/seat`| Updates a table by deleting reservation Id and changes status to "finished".
 
 
