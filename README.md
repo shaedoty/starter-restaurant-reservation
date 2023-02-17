@@ -44,24 +44,40 @@ Periodic Tables is a restaurant reservation booking and table management system.
 
 ## Features
 ### Dashboard
-Here you can see the tables avaliable as well as the reservations for the chosen date. The user can navigate through different dates at the top, choose to edit, choose seats, or cancel current reservations, or navigate to a different page with the sidebar links.
+Here you can see the tables avaliable as well as the reservations for the chosen date. The user can navigate through different dates at the top, choose to edit, choose seats, or cancel current reservations, or navigate to a different page with the navbar links.
 
 ![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/Dashboard%20with%20Reservations.png)
 
 ### New Reservation
-Users can create a new reservation by clicking on the `+ New Reservation` link on the sidebar. Each reservation requires a first name, last name, mobile number, party size, reservation time, and reservation date. If any inputs are invalid, the user will get an informative error message.
+Users can create a new reservation by clicking on the New Reservation link on the navbar. Each reservation requires a first name, last name, mobile number, party size, reservation time, and reservation date. If any inputs are invalid, the user will get an informative error message.
 
 ![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/New%20Reservation.png)
 
 ### Edit Reservation
-The Edit Reservation page allows a user to edit an existing reservation. When a user navigates to this page, the fields will be populated with the existing reservation's current information, which the user can edit. All constraints from the New Reservation page are present on this page. If any inputs are invalid, the user will get an informative error message.
+The Edit Reservation page allows a user to edit an existing reservation. The user can navigate to this page from the Edit button on the reservation, which you can find through a phone number search or by going to the date of the reservation. When a user navigates to this page, the fields will be populated with the existing reservation's current information, which the user can edit. All constraints from the New Reservation page are present on this page. If any inputs are invalid, the user will get detailed error message.
 
 ![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/Edit%20Reservation.png)
 
+### New Table
+The New Table page allows a user to create a new table in the restaurant. Table Name and Capacity fields both are required. The Table Name must be at least two characters. The Capacity must be at least 1. If any inputs are invalid the user will get an detailed error message.
+
 ![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/New%20Table.png)
+
+## Search
+The user may access the search feature by clicking the Search link on the navbar. When user clicks on the link it will redirect them to the search bar where the user can input any mobile number and will lookup to see if that mobile number has been used for a reservation. It will also show the status of the mobile number as either Seated, Booked, Cancelled, or Finished.
 
 ![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/Search.png)
 
+## Seat
+To seat a reservation, the user can click on the Seat button, this will redirect the user to a new page where the user can view the reservation party size. It will also display to the user a dropdown table which will list all of the tables and the table's max seating.
+
+If the party size is too big for the selected table or if that table is not available, an error will notify the user.
 
 ![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/Seat%20Reservation.png)
+
+## Cancel
+
+User has the ability to cancel any reservation that has been created and yet to be seated. The user can navigate to this page from the Cancel button on the reservation, which you can find by going to the date of the reservation. Clicking on the Cancel button at the bottom of each reservation card will generate a confirmation dialog box that will ask the user to confirm the cancellation.
+
+![App Screenshot](https://raw.githubusercontent.com/shaedoty/starter-restaurant-reservation/main/front-end/screenshots/Cancel.png)
 
