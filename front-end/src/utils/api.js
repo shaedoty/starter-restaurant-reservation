@@ -2,21 +2,14 @@ import formatReservationDate from "./format-reservation-date";
 import formatReservationTime from "./format-reservation-date";
 import axios from "axios";
 
-// Defines the base URL for the API.
-// The default values is overridden by the `API_BASE_URL` environment variable.
+
 const API_BASE_URL =
   process.env.REACT_APP_API_BASE_URL || "http://localhost:5001";
 
-// Defines the default headers for these functions to work with `json-server`
 const headers = new Headers();
 headers.append("Content-Type", "application/json");
 
-// Fetches `json` from the specified URL and handles error status codes and ignores `AbortError`s.
-// The 'url' param is the url for the requst.
-// The 'options' param are any options for the fetch.
-// The 'onCancel' param is the value to return if the fetch call is aborted. The default value is undefined.
-// Returns a promise that resolves to the `json` data or an error.
-// If the response is not in the 200 - 399 range the promise is rejected.
+
 async function fetchJson(url, options, onCancel) {
   try {
     const response = await fetch(url, options);
@@ -40,7 +33,6 @@ async function fetchJson(url, options, onCancel) {
   }
 }
 
-// Web Request Functions //
 
 export async function listReservations(params, signal) {
   const url = new URL(`${API_BASE_URL}/reservations`);
