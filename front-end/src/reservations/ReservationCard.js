@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { getDisplayDate, getDisplayTime } from "../utils/date-time";
 
-// Defines how each reservation will be displayed on the dashboard and search pages.
+
 
 export default function ReservationCard({ reservation }) {
   const URL = process.env.REACT_APP_API_BASE_URL;
@@ -28,11 +28,10 @@ export default function ReservationCard({ reservation }) {
     }
   };
 
-  // Formats the date and time.
   const displayDate = getDisplayDate(reservation.reservation_date);
   const displayTime = getDisplayTime(reservation.reservation_time);
 
-  // Defines the Bootstrap classNames for color based on the reservation status.
+
   const statusColor = {
     booked: "success",
     seated: "primary",
