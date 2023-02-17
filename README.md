@@ -17,6 +17,19 @@ Periodic Tables is a restaurant reservation booking and table management system.
 **Backend:** Node.js, Express, PostgreSQL, Knex
 
 
+## Installation
+
+1. Fork and clone this repository.
+2. Run cp ./back-end/.env.sample ./back-end/.env.
+3. Update the ./back-end/.env file with the connection  URL's to your ElephantSQL database instance.
+4. Run cp ./front-end/.env.sample ./front-end/.env.
+5. You should not need to make changes to the ./front-end/.env file unless you want to connect to a backend at a location other than http://localhost:5001.
+6. Run npm install to install project dependencies.
+7. Run npm run start:dev to start your server in development mode.
+
+
+## Routes
+
 | Method | Route     | Description                |
 | :-------- | :------- | :------------------------- |
 | `GET`|`/reservations`|Lists all reservations for the current date. |
@@ -29,17 +42,6 @@ Periodic Tables is a restaurant reservation booking and table management system.
 `POST`|`/tables`| Creates and returns a new table
 `PUT`|`/tables/:table_id/seat`| Updates a table with a reservation Id and changes status to "seated".
 `DELETE`|`/tables/:table_id/seat`| Updates a table by deleting reservation Id and changes status to "finished".
-
-
-## Installation
-
-1. Fork and clone this repository.
-2. Run cp ./back-end/.env.sample ./back-end/.env.
-3. Update the ./back-end/.env file with the connection  URL's to your ElephantSQL database instance.
-4. Run cp ./front-end/.env.sample ./front-end/.env.
-5. You should not need to make changes to the ./front-end/.env file unless you want to connect to a backend at a location other than http://localhost:5001.
-6. Run npm install to install project dependencies.
-7. Run npm run start:dev to start your server in development mode.
 
 
 ## Features
