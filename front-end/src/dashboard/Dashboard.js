@@ -8,7 +8,7 @@ import TablesList from "../tables/TablesList";
 import ErrorAlert from "../layout/ErrorAlert";
 
 // Defines the dashboard page.
-// Displays the reservations list for the 'date' param and the tables list.
+
 function Dashboard({ date }) {
   const history = useHistory();
   const query = useQuery();
@@ -21,8 +21,6 @@ function Dashboard({ date }) {
 
   useEffect(loadDashboard, [date, displayDate.display]);
 
-  // Loads the reservations and tables lists and sets them to their respective states.
-  // Sets any errors to the appropriate 'error' state.
   function loadDashboard() {
     const abortController = new AbortController();
     setReservationsError(null);
