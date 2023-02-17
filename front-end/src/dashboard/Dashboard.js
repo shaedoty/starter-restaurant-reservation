@@ -42,7 +42,7 @@ function Dashboard({ date }) {
       <div>
         <h1 className="mb-4">Reservations</h1>
 
-        {/* date section */}
+    
         <div className="d-md-flex mb-3">
           <h3 className="mb-0">{displayDate.display}</h3>
         </div>
@@ -85,7 +85,7 @@ function Dashboard({ date }) {
           />
         </div>
 
-        {/* reservations section */}
+ 
         <div>
           <h4 className="mt-3">Reservations</h4>
         </div>
@@ -96,7 +96,7 @@ function Dashboard({ date }) {
           )}
         </div>
 
-        {/* tables section */}
+   
         <ErrorAlert error={tablesError} />
         <div>
           <h4 className="mt-4">Tables</h4>
