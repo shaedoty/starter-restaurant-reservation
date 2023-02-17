@@ -37,35 +37,6 @@ export default function TableCard({ table }) {
     }
   }
 
-  // return (
-  //   <tr>
-  //     <td className="text-left">
-  //       {table.table_name}
-  //     </td>
-  //     <td className="text-center">
-  //       {table.capacity}
-  //     </td>
-  //     <td
-  //       className="text-center"
-  //       data-table-id-status={table.table_id}
-  //     >
-  //       {statusText()}
-  //     </td>
-  //     <td className="text-center">
-  //       {table.reservation_id && (
-  //         <button
-  //           className="btn btn-sm btn-danger text-center"
-  //           data-table-id-finish={table.table_id}
-  //           onClick={handleFinishClick}
-  //         >
-  //           <span className="oi oi-check mr-2" />
-  //           Finish
-  //         </button>
-  //       )}
-  //     </td>
-  //   </tr>
-  // );
-
   return (
     <div
       className="card text-dark bg-light mb-3 shadow-lg m-3"
