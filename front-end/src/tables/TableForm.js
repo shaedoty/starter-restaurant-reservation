@@ -3,8 +3,6 @@ import { useHistory } from "react-router";
 import axios from "axios";
 import ErrorAlert from "../layout/ErrorAlert";
 
-// Defines the form for creating a new table.
-
 export default function TableForm() {
   const history = useHistory();
 
@@ -75,7 +73,7 @@ export default function TableForm() {
           />
         </div>
 
-        {/* capacity field */}
+     
         <div className="input-group mb-3">
           <div className="input-group-prepend">
             <span className="input-group-text" id="basic-addon1">
@@ -100,7 +98,6 @@ export default function TableForm() {
           />
         </div>
 
-        {/* buttons */}
         <button
           type="button"
           className="btn btn-secondary mr-1 mb-3"
