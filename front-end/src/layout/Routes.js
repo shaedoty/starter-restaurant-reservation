@@ -10,7 +10,6 @@ import CreateTable from "../tables/CreateTable";
 import NotFound from "./NotFound";
 
 
-// Defines all the routes for the application.
 
 function Routes() {
   return (
