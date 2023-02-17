@@ -39,7 +39,6 @@ export default function SeatReservation() {
     setSelectedTable(event.target.value);
   };
 
-  // Handles a request to update the table's 'reservation_id' assignment.
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
