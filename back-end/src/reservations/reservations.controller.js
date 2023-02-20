@@ -1,6 +1,7 @@
 const resService = require("./reservations.service");
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
 
+
 //Middleware
 
 function validTime(req, res, next) {
@@ -66,6 +67,7 @@ function notTuesdayRes(req, res, next) {
     });
   }
 }
+
 
 
 
