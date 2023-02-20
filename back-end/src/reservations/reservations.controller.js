@@ -67,6 +67,9 @@ function notTuesdayRes(req, res, next) {
   }
 }
 
+
+
+
 function futureRes(req, res, next) {
   const { reservation_date, reservation_time } = req.body.data;
   const now = new Date();
