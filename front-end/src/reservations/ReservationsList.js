@@ -2,7 +2,6 @@ import React from "react";
 import ReservationCard from "./ReservationCard";
 
 
-
 export default function ReservationsList({ reservations, searchMode }) {
   if (searchMode) {
     const reservationsList = reservations.map((reservation) => {

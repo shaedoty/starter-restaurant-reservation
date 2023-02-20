@@ -4,6 +4,8 @@ import axios from "axios";
 import formatPhoneNumber from "../utils/formatPhoneNumber";
 import ErrorAlert from "../layout/ErrorAlert";
 
+// Defines the form for creating or editing a reservation on the new reservation and edit reservation pages.
+// If 'editMode' is true, the form is used to edit an existing reservation.
 
 export default function ReservationForm({
   existingReservation,
@@ -49,6 +51,7 @@ export default function ReservationForm({
     });
   };
 
+  // Handles a request to update an existing reservation or create a new reservation.
   const handleSubmit = async (event) => {
     event.preventDefault();
     setError(null);
@@ -116,7 +119,7 @@ export default function ReservationForm({
           />
         </div>
 
-      
+        {/* mobile number field */}
         <div className="input-group mb-3">
           <div className="input-group-prepend">
             <span className="input-group-text" id="basic-addon1">
@@ -142,7 +145,7 @@ export default function ReservationForm({
           />
         </div>
 
-        
+        {/* date field */}
         <div className="input-group mb-3">
           <div className="input-group-prepend">
             <span className="input-group-text" id="basic-addon1">
@@ -167,7 +170,7 @@ export default function ReservationForm({
           />
         </div>
 
-        
+        {/* time field */}
         <div className="input-group mb-3">
           <div className="input-group-prepend">
             <span className="input-group-text" id="basic-addon1">
@@ -193,7 +196,7 @@ export default function ReservationForm({
           />
         </div>
 
-       
+        {/* people field */}
         <div className="input-group mb-3">
           <div className="input-group-prepend">
             <span className="input-group-text" id="basic-addon1">
@@ -218,7 +221,7 @@ export default function ReservationForm({
           />
         </div>
 
-      
+        {/* buttons */}
         <button
           type="button"
           className="btn btn-secondary mr-1 mb-3"

@@ -1,7 +1,7 @@
 import React from "react";
 import SearchForm from "./SearchForm";
 
-
+// Defines the SearchReservations component for the search page.
 
 export default function SearchReservations() {
   return (
