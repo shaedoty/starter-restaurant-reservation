@@ -1,7 +1,6 @@
 const resService = require("./reservations.service");
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
 
-
 //Middleware
 
 function validTime(req, res, next) {
@@ -58,7 +57,7 @@ function bodyHasData(propertyName) {
 function notTuesdayRes(req, res, next) {
   const { reservation_date } = req.body.data;
   const date = new Date(reservation_date);
-  if (date.getDay() !== 2) {
+  if (date.getDay() !== 1) {
     return next();
   } else {
     return next({
@@ -67,8 +66,6 @@ function notTuesdayRes(req, res, next) {
     });
   }
 }
-
-
 
 
 
