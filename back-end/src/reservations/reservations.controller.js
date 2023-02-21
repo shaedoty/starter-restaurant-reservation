@@ -54,17 +54,18 @@ function bodyHasData(propertyName) {
   };
 }
 
-function notTuesdayRes(req, res, next) {
-  const { reservation_date } = req.body.data;
-  const date = new Date(reservation_date);
-  if (date.getDay() !== 2) {
-    return next();
-  } else {
-    return next({
-      status: 400,
-      message: `Sorry! We are closed on Tuesdays.`,
-    });
-  }
+function notTuesdayRes(req, res, next){
+const { reservation_date } = req.body.data;
+const day = new Date(reservation_date);
+const resDay = day.getUTCDay();
+if(resDay !== 2){
+return next()
+}else{
+return next({
+status: 400,
+message: `The resturant is closed on Tuesdays`
+})
+}
 }
 
 
