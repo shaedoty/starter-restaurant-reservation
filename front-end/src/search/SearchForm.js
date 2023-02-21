@@ -4,8 +4,6 @@ import formatPhoneNumber from "../utils/formatPhoneNumber";
 import { listReservations } from "../utils/api";
 import ReservationsList from "../reservations/ReservationsList";
 
-// Defines the form for searching for existing reservations on the search page.
-
 export default function SearchForm() {
   const [mobileNumber, setMobileNumber] = useState("");
   const [error, setError] = useState(null);
@@ -32,6 +30,7 @@ export default function SearchForm() {
     }
     listMatchingReservations();
     return () => abortController.abort();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reservations]);
 
   function loadReservations() {

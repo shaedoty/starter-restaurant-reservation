@@ -5,8 +5,6 @@ import ReservationForm from "./ReservationForm";
 import ErrorAlert from "../layout/ErrorAlert";
 import { formatAsDate } from "../utils/date-time";
 
-// Defines the EditReservation component for the edit reservation page.
-
 export default function EditReservation() {
   const URL = process.env.REACT_APP_API_BASE_URL;
   const { reservation_id } = useParams();
@@ -29,7 +27,7 @@ export default function EditReservation() {
     return () => abortController.abort();
   }, [URL, reservation_id]);
 
-  // If an existing reservation is found, the ReservationForm component is called in 'editMode'.
+
   return (
     <div>
       <h1 className="my-4">Edit Reservation</h1>

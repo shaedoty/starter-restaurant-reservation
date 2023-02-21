@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { getDisplayDate, getDisplayTime } from "../utils/date-time";
 
-// Defines how each reservation will be displayed on the dashboard and search pages.
+
 
 export default function ReservationCard({ reservation }) {
   const URL = process.env.REACT_APP_API_BASE_URL;
   const history = useHistory();
 
-
+  // Handles a request to update the reservation's status to 'cancelled'.
   const handleCancelClick = async (event) => {
     event.preventDefault();
     const message = `Do you want to cancel this reservation? This cannot be undone.`;
@@ -28,9 +28,9 @@ export default function ReservationCard({ reservation }) {
     }
   };
 
-
   const displayDate = getDisplayDate(reservation.reservation_date);
   const displayTime = getDisplayTime(reservation.reservation_time);
+
 
   const statusColor = {
     booked: "success",

@@ -8,7 +8,7 @@ import TablesList from "../tables/TablesList";
 import ErrorAlert from "../layout/ErrorAlert";
 
 // Defines the dashboard page.
-// Displays the reservations list for the 'date' param and the tables list.
+
 function Dashboard({ date }) {
   const history = useHistory();
   const query = useQuery();
@@ -20,7 +20,6 @@ function Dashboard({ date }) {
   const displayDate = getDisplayDate(date);
 
   useEffect(loadDashboard, [date, displayDate.display]);
-
 
   function loadDashboard() {
     const abortController = new AbortController();
@@ -43,7 +42,7 @@ function Dashboard({ date }) {
       <div>
         <h1 className="mb-4">Reservations</h1>
 
-        {/* date section */}
+    
         <div className="d-md-flex mb-3">
           <h3 className="mb-0">{displayDate.display}</h3>
         </div>
@@ -86,7 +85,7 @@ function Dashboard({ date }) {
           />
         </div>
 
-        {/* reservations section */}
+ 
         <div>
           <h4 className="mt-3">Reservations</h4>
         </div>
@@ -97,7 +96,7 @@ function Dashboard({ date }) {
           )}
         </div>
 
-        {/* tables section */}
+   
         <ErrorAlert error={tablesError} />
         <div>
           <h4 className="mt-4">Tables</h4>

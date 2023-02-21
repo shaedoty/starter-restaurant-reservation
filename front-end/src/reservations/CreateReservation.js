@@ -1,8 +1,6 @@
 import React from "react";
 import ReservationForm from "./ReservationForm";
 
-// Defines the CreateReservation component for the new reservation page.
-
 export default function CreateReservation() {
   return (
     <div>
