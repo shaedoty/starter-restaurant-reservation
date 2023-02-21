@@ -57,7 +57,7 @@ function bodyHasData(propertyName) {
 function notTuesdayRes(req, res, next) {
   const { reservation_date } = req.body.data;
   const date = new Date(reservation_date);
-  if (date.getDay() !== 1) {
+  if (date.getDay() !== 2) {
     return next();
   } else {
     return next({
